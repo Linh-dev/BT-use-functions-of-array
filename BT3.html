@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT3</title>
+</head>
+<body>
+<script>
+    let uppercase = 'QWERTYUIOPASDFGHJKLZXCVBNM';
+    let lowercase = 'qwertyuiopasdfghjklzxcvbnm';
+    let newArr = [];
+    let a= prompt('Import string:');
+
+    for (let i = 0; i<a.length;i++) {
+        let x = a[i];
+        let indexx = (uppercase.indexOf(x))
+        if (uppercase.indexOf(x) !== -1) {
+            newArr.push(lowercase[uppercase.indexOf(x)]);
+        } else {
+            newArr.push(uppercase[lowercase.indexOf(x)]);
+        }
+    }
+    //let b = newArr.toString();
+    console.log(newArr.join(""));
+</script>
+</body>
+</html>
